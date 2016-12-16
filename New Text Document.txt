@@ -1,0 +1,83 @@
+<h2 style="    margin-left: 16;    color: #06c; background-color: #DBDDE0;">Document Details</h2>
+<div class="container-fluid">
+    <div class="row rowStyle" style="margin-top:10px;">
+        <h4>
+        <div class=" col-md-2"> Select File </div>
+        </h4>
+        <div class=" col-md-5">
+            <label class="custom-file">
+                <input type="file" id="file" class="custom-file-input" accept=".xls,.xlsx,.doc,.pdf" [(ngModel)]="fileName" (change)="0" #fn>
+                <span class="custom-file-control"></span>
+            </label>
+        </div>
+    </div>
+    <div class="row rowStyle" style="margin-top:10px;">
+        <h4>
+        <div class=" col-md-2"> File Name</div>
+        </h4>
+        <div class=" col-md-5">
+            <label class="custom-file">
+                <input type="text" id="fileName" class="custom-file-input" [(value)]="fn.value" style="height:30px; width: 150%;" >
+            </label>
+        </div>
+    </div>
+    <div class="row rowStyle" style="margin-top:10px;">
+        <h4>
+        <div class=" col-md-2"> Display Name</div>
+        </h4>
+        <div class=" col-md-5">
+            <label class="custom-file">
+                <input type="text" id="category" style="height:30px; width: 150%;">
+            </label>
+        </div>
+    </div>
+    <div class="row rowStyle" style="margin-top:10px;">
+        <h4>
+        <div class=" col-md-2">Category </div>
+        </h4>
+        <div class=" col-md-7">
+            <select class="form-control dnwidth" style="width: 46%;" id="subCategory">
+              <option>Administration</option>
+              <option>Education</option>
+              <option>ERISA Compliance & Consulting</option>
+              <option>Investments</option>
+              <option>Payroll</option>
+          </select>
+        </div>
+    </div>
+    <div class="row" style="margin-top:10px;">
+        <h4>
+        <div class=" col-md-2"> Sub Category </div>
+        </h4>
+        <div class=" col-md-7">
+            <select class="form-control dnwidth" style="width: 46%;" id="documentName">
+              <option>Certified Annual Trust Statement</option>
+              <option>ADP/ACP Testing</option>
+              <option>5500 and/or Audit Package</option>
+              <option>Other Testing</option>
+              <option>Consulting</option>
+              <option>Auditor Responses</option>
+          </select>
+        </div>
+    </div>
+    <div class="row rowStyle" style="margin-top:10px;">
+        <h4>
+        <div class=" col-md-2"> Expiration Date </div>
+        </h4>
+        <div class=" col-md-5">
+            <label class="custom-file">
+                <input type="text" id="expDate" class="custom-file-input" style="height:30px; width: 150%;">
+            </label>
+        </div>
+    </div>
+</div>
+<!-- <footer>-->
+<div class="row" style="margin-top:20px;">
+    <div class="col-md-4 text-right">
+        <button class="btn" (click)="display=false" style="height: 32px; width: 85px;  border-radius: 9px;">Cancel</button>
+    </div>
+    <div class="col-md-5 text-left">
+        <button class="btn-primary" (click)="display=true" style="height: 32px; width: 85px;border-radius: 9px;" >Upload</button>
+    </div>
+</div>
+<!--</footer>-->
